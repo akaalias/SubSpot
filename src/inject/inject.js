@@ -33,11 +33,21 @@ function handleURLProperty(element, urlProperty) {
 		const firstInputURL = inputs[0].textContent;
 		const firstLabelText = labels[0].textContent;
 		const newLink = document.createElement("a")
+		var iconClass = "link";
+		if(firstLabelText.includes("LinkedIn")) {
+			iconClass = "linkedin-button"
+		}
+
+		if(firstLabelText.includes("Google")) {
+			iconClass = "google-button"
+		}
 
 		newLink.innerText = firstLabelText;
 		newLink.href = firstInputURL;
 		newLink.target = "_blank";
 		newLink.classList.add("hubspot-url-property-button");
+		newLink.classList.add(iconClass);
+
 		element.replaceWith(newLink);
 	}
 }
@@ -55,8 +65,11 @@ function handleClipboardProperty(element, urlProperty) {
 	}
 }
 
-function handleHiddenProperty(element, urlProperty) {
-	element.remove();
+function resizeSidebar() {
+	const deals = document.querySelectorAll("[objecttype=\"DEAL\"]");
+	for (const deal of deals) {
+		deal.setAttribute("style", "width: 500px; background-color: green;")
+	}
 }
 
 replaceElements();

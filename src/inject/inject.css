@@ -1,6 +1,5 @@
 /* NICER UI ELEMENTS */
 
-
 .hubspot-url-property-button {
     display: block;
     border-width:1px;
@@ -9,34 +8,49 @@
     border-radius: 8px;
     padding: 8px;
     box-shadow:inset 0px 1px 0px 0px #54a3f7;
-    text-shadow:inset 0px 1px 0px #154682;
-    background: linear-gradient(#007dc1, #0061a7);
+    background: darkblue;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis !important;
     height: 36px;
+    width: 300px;
     transition: background 0.5s ease-out 0.5ms;
     margin-top: 4px;
     marting-bottom: 4px;
-    padding-left: 8px;
+    padding-left: 36px;
     padding-top: 6px !important;
-}
-
-.linkedin-button {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/linkedin.png");
 }
 
 .hubspot-url-property-button:hover {
+    background-color: blue !important;
     color: white !important;
-    background: linear-gradient(#0061a7, #007dc1);
     text-decoration: none !important;
-    padding: 8px !important;
     border-color:#124d77 !important;
-    padding: 8px !important;
     transition: background 0.5s ease-out 0.5ms;
-    padding-left: 8px;
-    padding-top: 6px !important;
+
+    background-image: url("https://raw.githubusercontent.com/akaalias/SubSpot/main/icons/link.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 10px;
 }
+
+.linkedin-button {
+    background-image: url("https://raw.githubusercontent.com/akaalias/SubSpot/main/icons/linkedin.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 10px;
+}
+
+.google-button {
+    background-image: url("https://raw.githubusercontent.com/akaalias/SubSpot/main/icons/google.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 10px;
+}
+
 
 .hubspot-clipboard-property-div {
     border-radius: 8px;
@@ -48,18 +62,6 @@
     margin-bottom: 16px;
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.hubspot-url-property-button:hover {
-    background-color: linen;
-    border: 1px solid darkred;
-    color: darkred;
-}
-
-.hubspot-clipboard-property-button:hover {
-    background-color: lightblue;
-    border: 1px solid darkblue;
-    color: darkblue;
 }
 
 /* HIDE ELEMENTS */
@@ -86,7 +88,8 @@ div[data-sidebar-card-type="EngagementAttachmentsCard"],
 div[data-sidebar-card-type="IntegrationCard"],
 div[data-sidebar-key="Payments"],
 i18n-string[data-key="cardPreviewHighlight.dealHighlight.closeDateNoStrong"],
-div[data-selenium-test="DealHighlightDetailsCloseDateInput"]
+div[data-selenium-test="DealHighlightDetailsCloseDateInput"],
+div[class^="AvatarWrapper"]
 {
     display: none;
 }
@@ -179,4 +182,25 @@ div[objecttype="DEAL"] .private-modal__header {
 /* Sidebars */
 div[data-selenium-test="universal-sidebar-highlight"] {
     border: none;
+}
+
+.private-layer,
+div[objecttype="DEAL"],
+div[data-component-name="UIPanel"],
+div[objecttype="DEAL"],
+header.private-modal__header,
+div.private-panel__container,
+div[class^="UniversalPreviewSidebarAsync"],
+div[data-layer-for="UIPanel"],
+div[class^="StyledUniversalSidebarPanel"]
+{
+    min-width: 650px !important;
+    background-color: white;
+    display: flex;
+    overflow: visible !important;
+}
+
+div[data-sidebar-location="CRM_RECORD_RIGHT"],
+div[class^="LayoutFullPage__StyledSidebar"]{
+    padding-top: 24px;
 }
