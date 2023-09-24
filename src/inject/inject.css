@@ -1,0 +1,182 @@
+/* NICER UI ELEMENTS */
+
+
+.hubspot-url-property-button {
+    display: block;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#124d77;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    text-shadow:inset 0px 1px 0px #154682;
+    background: linear-gradient(#007dc1, #0061a7);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+    height: 36px;
+    transition: background 0.5s ease-out 0.5ms;
+    margin-top: 4px;
+    marting-bottom: 4px;
+    padding-left: 8px;
+    padding-top: 6px !important;
+}
+
+.linkedin-button {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/icons/linkedin.png");
+}
+
+.hubspot-url-property-button:hover {
+    color: white !important;
+    background: linear-gradient(#0061a7, #007dc1);
+    text-decoration: none !important;
+    padding: 8px !important;
+    border-color:#124d77 !important;
+    padding: 8px !important;
+    transition: background 0.5s ease-out 0.5ms;
+    padding-left: 8px;
+    padding-top: 6px !important;
+}
+
+.hubspot-clipboard-property-div {
+    border-radius: 8px;
+    background-color: yellow;
+    background-color: lightgoldenrodyellow;
+    padding: 8px;
+    font-size: larger;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hubspot-url-property-button:hover {
+    background-color: linen;
+    border: 1px solid darkred;
+    color: darkred;
+}
+
+.hubspot-clipboard-property-button:hover {
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    color: darkblue;
+}
+
+/* HIDE ELEMENTS */
+
+.app {
+    height: 100% !important;
+}
+
+#hs-nav-v4,
+a[data-selenium-test="all-properties-button"],
+a[data-selenium-test="property-history-button"],
+div[data-test-id="cdb-column-footer"],
+.private-header__toolbar,
+button[data-test-id="show-hide-insights-button"],
+button[data-selenium-test="index-board-actions-dropdown"],
+button[data-selenium-test="index-save-view-btn"],
+span[data-test-id="cdbc-no-activity-scheduled"],
+div[class^="UIExpandableSection__ExpandableHeader"],
+button[data-selenium-test="profile-settings-actions-btn"],
+div[data-selenium-test="highlightAmount"],
+div[data-selenium-test="property-copy-email"],
+div[data-sidebar-key="PaymentLinks"],
+div[data-sidebar-card-type="EngagementAttachmentsCard"],
+div[data-sidebar-card-type="IntegrationCard"],
+div[data-sidebar-key="Payments"],
+i18n-string[data-key="cardPreviewHighlight.dealHighlight.closeDateNoStrong"],
+div[data-selenium-test="DealHighlightDetailsCloseDateInput"]
+{
+    display: none;
+}
+
+/* Body */
+
+div[class^="MainContentWrapper-"] {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* Heading */
+
+#hs-nav-v4:hover {
+    opacity: 100%;
+    transition: opacity 0.5s ease-out 0.5ms;
+}
+
+div[draggable=true] {
+    display: none;
+}
+
+.private-header--full-width {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+
+    padding-bottom: 8px !important;
+    padding-top: 8px !important;
+    opacity: 20%;
+    transition: opacity 0.5s ease-out 0.5ms;
+
+    background-color: darkred;
+    border: none !important;
+}
+
+#uiabstractdropdown-button-content-1 {
+    color: white !important;
+}
+
+.private-header--full-width:hover {
+    opacity: 100%;
+    transition: opacity 0.5s ease-out 0.5ms;
+}
+
+div[class^="IndexPage__FilterBarContainer"] {
+    opacity: 20%;
+    transition: opacity 0.5s ease-out 0.5ms;
+}
+
+.private-dropdown__caret {
+    color: white !important;
+}
+
+/* Filter bar */
+div[class^="IndexPage__FilterBarContainer"]:hover {
+    opacity: 100%;
+    transition: opacity 0.5s ease-out 0.5ms;
+}
+
+div[class^="IndexPage__FilterBarContainer"] .private-truncated-string__inner {
+    color: darkred !important;
+}
+div[class^="IndexPage__FilterBarContainer"]  .private-dropdown__caret {
+    display: none;
+}
+
+div[class^="IndexPage__FilterBarContainer"] span[class^="UIIcon__IconContent"] {
+    display: none;
+}
+
+button[data-selenium-test="advanced-filter-btn"] {
+    color: white !important;
+}
+
+.private-modal__header {
+    background-color: darkblue !important;
+    background-image: none !important;
+}
+
+div[objecttype="DEAL"] .private-modal__header {
+    background-color: darkred !important;
+    background-image: none !important;
+}
+
+/* Sidebars */
+div[data-selenium-test="universal-sidebar-highlight"] {
+    border: none;
+}
