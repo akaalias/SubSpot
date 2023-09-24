@@ -19,6 +19,12 @@
     marting-bottom: 4px;
     padding-left: 36px;
     padding-top: 6px !important;
+
+    background-image: url("https://raw.githubusercontent.com/akaalias/SubSpot/main/icons/link.png");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: 8px;
+    background-position-y: 10px;
 }
 
 .hubspot-url-property-button:hover {
@@ -27,12 +33,6 @@
     text-decoration: none !important;
     border-color:#124d77 !important;
     transition: background 0.5s ease-out 0.5ms;
-
-    background-image: url("https://raw.githubusercontent.com/akaalias/SubSpot/main/icons/link.png");
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position-x: 8px;
-    background-position-y: 10px;
 }
 
 .linkedin-button {
