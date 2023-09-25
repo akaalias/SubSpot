@@ -169,22 +169,12 @@ button[data-selenium-test="advanced-filter-btn"] {
     color: white !important;
 }
 
-.private-modal__header {
-    background-color: darkblue !important;
-    background-image: none !important;
-}
-
-div[objecttype="DEAL"] .private-modal__header {
-    background-color: darkred !important;
-    background-image: none !important;
-}
-
 /* Sidebars */
 div[data-selenium-test="universal-sidebar-highlight"] {
     border: none;
 }
 
-.private-layer,
+div.private-layer,
 div[objecttype="DEAL"],
 div[data-component-name="UIPanel"],
 div[objecttype="DEAL"],
@@ -192,15 +182,34 @@ header.private-modal__header,
 div.private-panel__container,
 div[class^="UniversalPreviewSidebarAsync"],
 div[data-layer-for="UIPanel"],
-div[class^="StyledUniversalSidebarPanel"]
+div[class^="StyledUniversalSidebarPanel"],
+div[data-selenium-test="more-filters-panel"],
+div.private-panel--right
 {
-    min-width: 650px !important;
     background-color: white;
-    display: flex;
+    min-width: 650px !important;
+    display: flex !important;
     overflow: visible !important;
 }
+
 
 div[data-sidebar-location="CRM_RECORD_RIGHT"],
 div[class^="LayoutFullPage__StyledSidebar"]{
     padding-top: 24px;
+}
+
+.private-modal__header {
+    background-color: darkblue !important;
+    background-image: none !important;
+}
+
+div[data-selenium-test="more-filters-panel"] .private-modal__header {
+    background-color: darkred !important;
+    background-image: none !important;
+}
+
+
+div[objecttype="DEAL"] .private-modal__header {
+    background-color: darkred !important;
+    background-image: none !important;
 }
